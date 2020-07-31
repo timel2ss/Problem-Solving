@@ -1,2 +1,2 @@
 # BOJ
-<a src="acmicpc.net">Baekjoon Online Judge</a>
+<a href="acmicpc.net">Baekjoon Online Judge</a>
