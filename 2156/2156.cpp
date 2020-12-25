@@ -23,9 +23,11 @@ int main(void) {
         v.push_back(amount);
     }
     
-    maxAmount[0] = 0;
     maxAmount[1] = v[0];
-    maxAmount[2] = v[0] + v[1];
+    
+    if(n > 1) {
+        maxAmount[2] = v[0] + v[1];
+    }
 
     for(int i = 3; i <= n; i++) {
         maxAmount[i] = maxValue(maxAmount[i-1], maxAmount[i-2] + v[i-1], maxAmount[i-3] + v[i-2] + v[i-1]);    
