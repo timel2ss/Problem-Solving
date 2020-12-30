@@ -5,13 +5,13 @@ using namespace std;
 vector<int> list[1001];
 bool visit[1001];
 
-void bfs(int start) {
+void dfs(int start) {
     visit[start] = true;
 
     for(int i = 0; i < list[start].size(); i++) {
         int adjacency = list[start][i];
         if(!visit[adjacency]) {
-            bfs(adjacency);
+            dfs(adjacency);
         }
     }    
 }
@@ -35,7 +35,7 @@ int main(void) {
 
     for(int i = 1; i <= N; i++) {
         if(!visit[i]) {
-            bfs(i);
+            dfs(i);
             count++;
         }
     }
