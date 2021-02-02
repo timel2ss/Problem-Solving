@@ -58,5 +58,6 @@ int main(void) {
     for(int i : indexes) {
         cout << i << " ";
     }
+    
     return 0;
 }
